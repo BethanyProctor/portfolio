@@ -1,0 +1,17 @@
+body {
+    background-color: cornsilk;
+}
+
+.header {
+   padding: 20px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   background-color: lightskyblue;
+}
+
+,header h1 {
+    color:rgb(158, 71, 84);
+}
+
+.header nav {
+    text-decoration: none;
+}
