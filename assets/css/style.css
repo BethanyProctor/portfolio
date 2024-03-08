@@ -1,17 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: cornsilk;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #dedbd2;
+    color:#4a5759;
+    line-height: 2;
 }
 
-.header {
-   padding: 20px;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   background-color: lightskyblue;
+header {
+   background-color: #f7e1d7; 
+   display: flex;
+ 
 }
 
-,header h1 {
-    color:rgb(158, 71, 84);
+header h1 {
+    color: #df8794;
+    padding: 20px;
+    display: flex;
+    justify-content: right;
+    font-size: 150%;
 }
 
-.header nav {
+header nav {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav a {
+    color:rgb(15, 13, 41);
     text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    align-items: right;
+}
+
+.hero {
+    height: 400px;
+    width: 100%;
+    background-image: url("../images/header-picture.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h2 {
+    height: 10px;
+    background-color: #4a5759;
+    color: #df8794;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-me {
+    text-align: center;
+}
+
+.work {
+    text-align: center;
+}
+
+.contact {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-size: 75%;
+    background-color: white;
+}
+
+@media screen and (max-width: 768px) { 
+    header,
+    main {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        background-color: rgb(236, 202, 255);
+    }
 }
