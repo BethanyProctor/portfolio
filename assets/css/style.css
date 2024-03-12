@@ -18,7 +18,6 @@ header h1 {
     font-size: 200%;
     background-color: ;
     padding: 0 20px 0 20px;
-    
 }
 
 nav {
@@ -60,49 +59,66 @@ a:hover {
     color: white;
 }
 
-main,
-article {
-    width: 90%;
-    display: grid;
-    grid-template-columns: 25% 60%;
-    gap: 5%;
+main {
     color: #430e0e;
+    /* width: 90%; */
+    /* display: flex; */
 }
 
 .subtitle {
-    padding: 20px;
-    font-size: 40px;
-    text-align: end;
+    padding-top: 40px;
+    padding-left: 90px;
+    font-size: 200%;
 }
 
 .about {
-    padding-top: 40px;
+    /* padding-bottom: 40px; */
+    padding-left: 300px;
+    width: 80%;
+    font-size: 110%;
 }
 
 .profile {
     float: left;
-    width: 200px;
+    width: 250px;
     height:1;
-    padding: 10px 20px 5px 0;
+    padding: 10px 20px 5px;
 }
 
-figure {
-    position: relative;
+.work {
+    padding-left: 300px;
+    padding-top: 40px;
 }
 
-figcaption {
-    position: absolute;
-    bottom: 5px;
-    right: 10px;
-    background-color: #6C464F;
-    color: #d2cbcf;
-    padding: 10px;
-}
-
-figcaption:hover {
+.work a {
     color: black;
 }
 
+.work a:hover {
+    opacity: .7;
+}
+
+.box-item img {
+    width: 450px;
+}
+
+.refactor img{
+    width: 700px;
+}
+
+.bottom-nav {
+    padding-left: 300px;
+}
+
+.bottom-nav a {
+    font-size: 150%;
+    padding-left: 30px;
+    color:#430e0e;
+    
+}
+.bottom-nav a:hover {
+    color: green;
+}
 
 footer {
     background-color: #6C464F;
@@ -111,6 +127,18 @@ footer {
 }
 
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1024px) {
+    .refactor img,
+    .box-item img {
+        width: 420px;
+    }
+
+    .work, 
+    .about {
+        padding-left: 40px;
+    }
     
+    .bottom-nav {
+        padding: 0;
+    }
 }
